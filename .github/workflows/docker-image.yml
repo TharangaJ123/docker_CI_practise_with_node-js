@@ -25,7 +25,7 @@ jobs:
         run: ls -al
 
       - name: Build Docker Image
-        working-directory: /node-docker-devops
+        working-directory: node-docker-devops/
         run: docker build -t tharangajw/node-devops-app:latest .
 
       - name: Push Docker Image
