@@ -18,6 +18,10 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
+      #debug added
+      - name: Check files
+        run: ls -al
+
       - name: Build Docker Image
         working-directory: personal_projects/node-docker-devops
         run: docker build -t tharangajw/node-devops-app:latest .
