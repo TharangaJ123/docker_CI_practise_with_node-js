@@ -19,6 +19,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker Image
+        working-directory: personal_projects/node-docker-devops
         run: docker build -t tharangajw/node-devops-app:latest .
 
       - name: Push Docker Image
