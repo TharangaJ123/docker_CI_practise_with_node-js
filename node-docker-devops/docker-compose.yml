@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  app:
+    image: tharangajw/node-devops-app:1.0
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    restart: always
